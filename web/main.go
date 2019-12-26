@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"os"
 )
 
 func topHandler(w http.ResponseWriter, r *http.Request) {
 
-	url := "http://app:8081/ping"
+	url := os.Getenv("APP_URL")
 	resp, _ := http.Get(url)
 	byteArray, _ := ioutil.ReadAll(resp.Body)
 	resp.Body.Close()
