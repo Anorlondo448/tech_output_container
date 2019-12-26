@@ -12,6 +12,6 @@ CREATE TABLE member
   company  VARCHAR(255)
 );
 
--- INSERT INTO member (id, name, point, company) VALUES (1, "YEBISU", 95, "KIRIN");
--- INSERT INTO member (id, name, point, company) VALUES (2, "MALTS",  90, "SUNTORY");
--- INSERT INTO member (id, name, point, company) VALUES (3, "一番搾り",  100, "KIRIN");
+INSERT INTO member (id, name, point, company) VALUES (1, "YEBISU", 95, "KIRIN");
+INSERT INTO member (id, name, point, company) VALUES (2, "MALTS",  90, "SUNTORY");
+INSERT INTO member (id, name, point, company) VALUES (3, "一番搾り",  100, "KIRIN");
