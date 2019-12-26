@@ -8,7 +8,7 @@ import (
 
 func topHandler(w http.ResponseWriter, r *http.Request) {
 
-	url := "http://localhost:8081/ping"
+	url := "http://app:8081/ping"
 	resp, _ := http.Get(url)
 	byteArray, _ := ioutil.ReadAll(resp.Body)
 	resp.Body.Close()
